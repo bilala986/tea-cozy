@@ -1,0 +1,378 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/******************************************MY CODE *******************************************/
+
+body {
+    background-color: black;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+/****************************************** HEADER *******************************************/
+
+
+header {
+    height: 69px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid seashell;
+}
+
+header a img {
+    height: 50px;
+    margin: 10px;
+    opacity: 0.9;
+}
+
+nav ul {
+    float: right;
+    margin: -45px 20px 10px 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: underline;
+    color: seashell;
+    font-size: 22px;
+    opacity: 0.9;
+    transition: text-decoration 1s ease, color 1s ease, opacity 1s ease;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: sienna;
+    opacity: 0.3;
+}
+
+
+/************************************ MISSION *************************************/
+
+.mission {
+    background-image: url(img/img-mission-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-content: center;
+    max-width: 1200px;
+    max-height: 700px;
+    height: 700px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 69px;
+}
+
+.mission .mission-text {
+    background-color: black;
+    color: seashell;
+    text-align: center;
+    width: : 100%;
+    height: 125px;
+    opacity: 0.9;
+}
+
+.mission .mission-text h2 {
+    font-size: 32px;
+    padding: 20px 0 20px 0;
+}
+
+.mission .mission-text h4 {
+    font-size: 25px;
+}
+
+
+/************************************ FEATURED TEA *************************************/
+
+.featured-tea {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+
+.featured-tea .tea-text {
+    color: seashell;
+    text-align: center;
+}
+
+.featured-tea .tea-text h2 {
+    font-size: 32px;
+    padding: 20px 0 20px 0;
+}
+
+.featured-tea .tea-text h4 {
+    font-size: 25px;
+}
+
+.featured-tea .tea-images {
+    /*display: flex;
+    flex-basis: 1000px;
+    height: 700px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-grow: 3;*/
+    display: flex;
+    width: 1000px;
+    height: 700px;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: seashell;
+}
+
+.featured-tea .tea-images img {
+    /*margin: 0 auto;*/
+    margin: 20px;
+    height: 200px;
+    width: 300px;
+    /*margin: 40px 10px 10px 10px;*/
+    flex-grow: 1;        /* Allow images to grow */
+    flex-shrink: 1;      /* Allow images to shrink */
+    flex-basis: 250px;   /* Set a base width */
+    margin: 40px 10px 10px 10px;
+    height: auto;        /* Set height to auto for a more responsive layout */
+}
+
+.featured-tea .tea-images .pic {
+    text-align: center;
+}
+
+.featured-tea .tea-images .pic h4 {
+    font-size: 22px;
+}
+
+.featured-tea .tea-images .picture4, .picture5 {
+    margin-top: -100px;
+}
+
+
+
+
+/************************************ LOCATION *************************************/
+
+.locations {
+    background-image: url(img/img-locations-background.webp);
+    width: 1200px;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.locations .title {
+    font-size: 40px;
+    color: seashell;
+    opacity: 0.9;
+    text-align: center;
+    padding: 75px 0px 25px 0px;
+}
+
+.locations .boxes {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+}
+
+.locations .boxes > div {
+    margin: 0 30px;
+}
+
+.locations .boxes .downtown {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+}
+
+.locations .boxes .title-box {
+    color: seashell;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 30px;
+    opacity: 0.9;
+}
+
+.locations .boxes .box-text {
+    color: seashell;
+    opacity: 0.9;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.locations .boxes .box-text sup {
+    font-size: 0.75em;
+    vertical-align: super;
+}
+
+.locations .boxes .east-bayside {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+}
+
+.locations .boxes .east-bayside .title-box {
+    color: seashell;
+}
+
+.locations .boxes .oakdale {
+    background-color: black;
+    height: 300px;
+    width: 300px;
+}
+
+.locations .boxes .oakdale .title-box {
+    color: seashell;
+}
+
+
+
+
+/************************************ FOOTER *************************************/
+
+footer {
+    margin: 45px;
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.footer-text {
+    text-align: center;
+    color: seashell;
+    opacity: 0.9;
+}
+
+.footer-text h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.footer-text h5 {
+    font-size: 17px;
+    margin-top: 20px;
+}
+
+.copyright {
+    color: seashell;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
